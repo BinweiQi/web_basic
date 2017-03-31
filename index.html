@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Bootstrap Tutorial</title>
+
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+#nttLogo{
+  height: 100px;
+  width: 100px;
+}
+#websiteTitle{
+  font-size: 10em;
+  vertical-align: middle;
+  font-family: 'Pacifico', cursive;
+  padding-left: 15px;
+  color: #191970;
+}
+#websiteSlogan{
+  font-size: 5.4em;
+}
+/* Carousel Styling */
+.slide1{
+  background-image: url('images/1.JPG');
+  height: 500px;
+/*   background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('images/2.JPG');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('images/3.gif');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+section{
+  width: 100%;
+  padding: auto;
+  margin: auto;
+}
+</style>
+</head>
+<body>
+<!--
+<div class="container">
+  <div class="jumbotron">
+  <img src="ntt-logo.png" id="nttLogo" alt="New Think Tank Logo">
+  <span id="websiteTitle">New Think Tank</span>
+  <p id="websiteSlogan">Video Tutorials on just about Anything</p>
+  </div>
+</div>
+-->
+
+<!-- Carousel -->
+<!-- Surround everything with a div with the class carousel slide -->
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Define how many slides to put in the carousel -->
+  <ol class="carousel-indicators">
+    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+    <li data-target="#theCarousel" data-slide-to="1"> </li>
+    <li data-target ="#theCarousel" data-slide-to="2"> </li>
+  </ol >
+
+  <!-- Define the text to place over the image -->
+  <div class="carousel-inner">
+    <div class="item active" >
+    <div class ="slide1"></div>
+    <div class="carousel-caption">
+      <h1>Amazing Backgrounds</h1>
+      <p>Thousands of Backgrounds for Free</p>
+      <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+    </div>
+  </div>
+  <div class="item">
+  <div class="slide2"></div>
+  <div class="carousel-caption">
+    <h1>Thousands of Colors</h1>
+    <p>Every Color you can Imagine</p>
+  </div>
+  </div>
+  <div class="item">
+  <div class="slide3"></div>
+  <div class="carousel-caption">
+  <h1>Amazing Illustrations</h1>
+  <p>And they are All Free</p>
+  </div>
+  </div>
+  </div>
+
+  <!-- Set the actions to take when the arrows are clicked -->
+  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"> </span>
+  </a>
+  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  </div>
+<div>
+  <h1>RESUME</h1>
+</div>
+<div>
+  <h1>PROJECTS</h1>
+  <img src="images/topbar.jpg" style="width: 100%">
+</div>
+    <section class="clearfix">
+     
+      <figure>
+        <a href="images/streetView.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="images/streetView.jpg" >
+        <figcaption><h1><br><br><center>GREET STREETVIEW</center></h1><center><span style="font-size: 3em">———————————<br style="margin-bottom: 15px;"><span style="font-family: 'Playball', cursive;font-size: 1.1em; letter-spacing: 1px;">scenic area· landscape</span></center></figcaption></center></a>
+      </figure>
+      <figure>
+       <a href="images/neighbor.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="images/neighbor.jpg" >
+        <figcaption><h1 style="font-size: 2.2em"><center>PLACE TO RELAX</center></h1><center><span style="font-size: 3em">———————<br><span style="font-family: 'Playball', cursive;font-size: 0.8em; letter-spacing: 2px;">hiking · hotspots </span></center></figcaption></center></a>
+      </figure>
+      <figure>
+       <a href="images/peaceful.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="images/peaceful.jpg" >
+        <figcaption><h1 style="font-size: 2.2em"><center>PEACEFUL PLACE</center></h1><center><span style="font-size: 3em">———————<br><span style="font-family: 'Playball', cursive;font-size: 0.8em; letter-spacing: 1px;">library · cafe</span></center></figcaption></center></a>
+      </figure>     
+      <figure>
+       <a href="images/resturant.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="images/resturant.jpg" >
+        <figcaption><h1 style="font-size: 2.2em"><center>FANCY RESTURANTS</center></h1><center><span style="font-size: 3em">————————<br><span style="font-family: 'Playball', cursive;font-size: 0.8em; letter-spacing: 1px;">food · coffee · work</span></center></figcaption></center></a>
+      </figure>
+
+
+      <figure>
+       <a href="images/shoreView.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="images/shoreView.jpg" >
+        <figcaption><h1 style="font-size: 2.2em"><center>SHORE VIEW</center></h1><center><span style="font-size: 3em">—————<br><span style="font-family: 'Playball', cursive;font-size: 0.8em; letter-spacing: 1px;">beach · ocean </span></center></figcaption></center></a>
+      </figure>
+    
+    </section>
+  <div>
+    <h1>SOURCE CODE</h1>
+    <h2><a href="https://bitbucket.org/BinweiQi">BitBuck</a></h2>
+  </div>
+  <div>
+    <h1>CONTACT</h1>
+    <h2>dannyqbw@hotmail.com</h2>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- Use downloaded version of Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
